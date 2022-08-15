@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import '../styles/users.css';
 
-import { getAllUsers } from "../pages/firebase";
+import { getAllUsers } from "../utils/firebase";
 import { Table } from 'reactstrap';
 
 
