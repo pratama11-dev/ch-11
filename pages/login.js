@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { auth, signInWithGoogle, logInWithEmailAndPassword, signInWithTwitter, signInWithFacebook } from "../utils/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+import Link from "next/link";
 // import "../styles/login.css";
 
 function Login() {
@@ -105,8 +106,8 @@ function Login() {
                 >
                   Login
                 </button>
-                <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register"
-                    className="link-danger">Register</a></p>
+                <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <Link href="/register"
+                    className="link-danger">Register</Link></p>
               </div>
 
             </form>

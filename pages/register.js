@@ -1,12 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
-// import { useAuthState } from "react-firebase-hooks/auth";
-// import { useNavigate } from "react-router-dom";
 import {
   registerWithEmailAndPassword,
   signInWithGoogle,
 } from "../utils/firebase";
-// import "./StyleRegister.css";
 import Link from "next/link";
 
 function Register() {

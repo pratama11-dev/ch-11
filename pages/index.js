@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Users from "../components/Users";
 import Script from "next/script";
@@ -121,7 +120,7 @@ export default function Home() {
               Experience new tradition game play
             </h3>
             <a
-              href="#"
+              href="/game"
               className="btn btn-warning btn-lg header-info-button mr-5"
             >
               Play NOW ||
@@ -610,23 +609,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <main classNameName={styles.main}>
-        < Users />
-      </main>
-
-      <footer classNameName={styles.footer}>
-        <Link
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span classNameName={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </Link>
-      </footer> */}
     </div>
   );
 }
