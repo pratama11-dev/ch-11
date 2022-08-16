@@ -7,8 +7,12 @@ import styles from "../styles/Home.module.css";
 import Users from "../components/Users";
 import Script from "next/script";
 import Link from "next/link";
+import { auth } from "../utils/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function Home() {
+  const [user] = useAuthState(auth);
+
   return (
     <div>
       <Head>
@@ -59,6 +63,13 @@ export default function Home() {
               <a href="#" className="nav-item nav-link px-4" id="about-us">
                 ABOUT US
               </a>
+              {user ? (
+                <a href="/users" className="nav-item nav-link px-4" id="users">
+                  USERS LIST
+                </a>
+              ) : (
+                "")
+              }
             </div>
             <div
               className="collapse navbar-collapse d-flex flex-row-reverse"
@@ -80,16 +91,20 @@ export default function Home() {
                     className="dropdown-menu bg-dark"
                     aria-labelledby="navbarScrollingDropdown"
                   >
-                    <li>
-                      <Link className="dropdown-item text-white" href="#">
-                        SIGN UP
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item text-white" href="/login">
-                        LOGIN
-                      </Link>
-                    </li>
+                    {user ? (
+                      <li>
+                        <Link className="dropdown-item" href="/dashboard">Dashboard</Link>
+                      </li>
+                      ) : (
+                      <>
+                        <li>
+                          <Link className="dropdown-item" href="/register">SIGN UP</Link>
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" href="/login">LOGIN</Link>
+                        </li>
+                      </>
+                    )}
                   </ul>
                 </li>
               </ul>
@@ -107,7 +122,7 @@ export default function Home() {
             </h3>
             <a
               href="#"
-              className="btn btn-warning btn-lg header-info-button"
+              className="btn btn-warning btn-lg header-info-button mr-5"
             >
               Play NOW ||
               <i className="bi bi-dice-5"></i>

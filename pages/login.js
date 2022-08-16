@@ -20,7 +20,7 @@ function Login() {
       return;
     }
     if (user) {
-      console.log("user: ", user);
+      return window.location.href = "/";
     }
   }, [user, loading]);
 
