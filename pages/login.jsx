@@ -21,7 +21,7 @@ function Login() {
       return;
     }
     if (user) {
-      return window.location.href = "/";
+      return window.location.href = "/dashboard";
     }
   }, [user, loading]);
 

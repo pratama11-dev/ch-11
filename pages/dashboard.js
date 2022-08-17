@@ -12,7 +12,7 @@ function Dashboard() {
   const [name, setName] = useState("");
   const [games, setGames] = useState([]);
 
-  // const router = useRouter();
+  const router = useRouter();
 
   useEffect(() => {
     async function fetchData() {
@@ -36,6 +36,7 @@ function Dashboard() {
   useEffect(() => {
     fetchUserName();
   } , [user]);
+
 
   return (
     <div className="container">
