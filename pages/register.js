@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
+// import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import {
   registerWithEmailAndPassword,
@@ -17,7 +18,7 @@ function Register() {
     e.preventDefault()
     if (!name) alert("Please enter name");
     await registerWithEmailAndPassword(name, email, password);
-    setSuccess(true)
+    // setSuccess(true)
     // setTimeout(() => {
     //   navigate('/login')
     // }, 2000)
