@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
 import Head from "next/head";

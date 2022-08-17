@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useEffect, useState } from "react";
-import { auth, signInWithGoogle, logInWithEmailAndPassword, signInWithTwitter, signInWithFacebook } from "../utils/firebase";
+import { auth, signInWithGoogle, logInWithEmailAndPassword, signInWithTwitter, signInWithFacebook, signInWithGithub } from "../utils/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Link from "next/link";
 // import "../styles/login.css";
@@ -56,6 +56,13 @@ function Login() {
                   onClick={signInWithFacebook}
                 >
                   <i className="bi bi-facebook"></i>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary btn-floating mx-1"
+                  onClick={signInWithGithub}
+                >
+                  <i className="bi bi-github"></i>
                 </button>
               </div>
 
