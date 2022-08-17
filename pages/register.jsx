@@ -2,7 +2,10 @@
 import React, { useState } from "react";
 import {
   registerWithEmailAndPassword,
+  signInWithFacebook,
+  signInWithGithub,
   signInWithGoogle,
+  signInWithTwitter,
 } from "../utils/firebase";
 import Link from "next/link";
 
@@ -38,6 +41,27 @@ function Register() {
                   type="button"
                   className="btn btn-primary btn-floating mx-1"
                   onClick={signInWithGoogle}
+                >
+                  <i className="bi bi-google"></i>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary btn-floating mx-1"
+                  onClick={signInWithTwitter}
+                >
+                  <i className="bi bi-google"></i>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary btn-floating mx-1"
+                  onClick={signInWithFacebook}
+                >
+                  <i className="bi bi-google"></i>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary btn-floating mx-1"
+                  onClick={signInWithGithub}
                 >
                   <i className="bi bi-google"></i>
                 </button>
