@@ -26,26 +26,19 @@ import {
 } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyBxk4qV3VWVAur7C4P5sh0yhwFv4EL_FRI",
-//   authDomain: "latihan-binar.firebaseapp.com",
-//   databaseURL: "https://latihan-binar-default-rtdb.asia-southeast1.firebasedatabase.app",
-//   projectId: "latihan-binar",
-//   storageBucket: "latihan-binar.appspot.com",
-//   messagingSenderId: "627058673453",
-//   appId: "1:627058673453:web:b3ba1f602b39c1497275a4",
-//   measurementId: "G-NLL2N4XSD7"
-// };
 const firebaseConfig = {
-  apiKey: "AIzaSyCb-T20PtA5x2i41rpqHP6e_by47DcH3x8",
-  authDomain: "binar-fsw20-platinum.firebaseapp.com",
-  projectId: "binar-fsw20-platinum",
-  storageBucket: "binar-fsw20-platinum.appspot.com",
-  messagingSenderId: "216935647513",
-  appId: "1:216935647513:web:845bb4e62a1f9e855b5d88",
+  apiKey: "AIzaSyDXe55F0wKvF-ArN8Vp56fk8PWo2ZSDl3g",
+  authDomain: "tugas10binar.firebaseapp.com",
+  projectId: "tugas10binar",
+  storageBucket: "tugas10binar.appspot.com",
+  messagingSenderId: "718122934664",
+  appId: "1:718122934664:web:932b40e42dfa69279f5a3d",
+  measurementId: "G-1V40E3P4QB"
 };
 
-const app = initializeApp(firebaseConfig);
+
+const  app = initializeApp(firebaseConfig);
+
 const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
