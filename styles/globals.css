@@ -146,6 +146,7 @@ nav {
     background-color: black;
 }
 
+
 /* gallery section  */
 
 .gallery {
@@ -203,6 +204,7 @@ nav {
     margin-right: -4rem;
 }
 
+
 /* feature section  */
 
 .features {
@@ -246,6 +248,7 @@ nav {
     font-size: 1.5rem;
 }
 
+
 /* feature section  */
 
 .sysreq {
@@ -265,8 +268,8 @@ nav {
     padding-bottom: 5vh;
 }
 
-.system__req{
-  color: white;
+.system__req {
+    color: white;
 }
 
 .req-info-top {
@@ -294,6 +297,7 @@ nav {
 .table-bordered td {
     border: #212226 1px solid !important;
 }
+
 
 /* top score section  */
 
@@ -382,6 +386,7 @@ nav {
     color: #A6A6A6 !important;
 }
 
+
 /* footer section  */
 
 .footer {
@@ -398,6 +403,7 @@ nav {
 .footer-content-right {
     color: white;
 }
+
 
 /*      Media Query     */
 
