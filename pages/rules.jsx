@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import * as PDFJS from "pdfjs-dist/build/pdf";
 PDFJS.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS.version}/pdf.worker.min.js`;
 
+
 const Rules = () => {
   let renderedPdf;
   const pageRenderRef = useRef(null);
@@ -18,6 +19,8 @@ const Rules = () => {
     const url = "/sample.pdf";
     downloadPDFFromURL(url);
   };
+
+ 
 
   const downloadPDFFromURL = (url) => {
     const xhrObj = new XMLHttpRequest();
@@ -164,10 +167,11 @@ const Rules = () => {
       fileReader.readAsDataURL(data);
     });
   };
-
+ 
   return (
     <div>
-      <h1>PDF.js Sample Example</h1>
+      <h1>Rules Set</h1>
+      
       <p>Loading: {progressTxt}</p>
       <div ref={pageRenderRef}></div>
     </div>
