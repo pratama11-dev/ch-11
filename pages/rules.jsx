@@ -171,7 +171,6 @@ const Rules = () => {
   return (
     <div>
       <h1>Rules Set</h1>
-      
       <p>Loading: {progressTxt}</p>
       <div ref={pageRenderRef}></div>
     </div>
