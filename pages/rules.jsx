@@ -167,19 +167,11 @@ const Rules = () => {
           fileReader = null // clear file reader
           reject(e)
         }
-<<<<<<< HEAD
       };
       fileReader.readAsDataURL(data);
     });
   };
  
-=======
-      }
-      fileReader.readAsDataURL(data)
-    })
-  }
-
->>>>>>> 4f3d6839ec93d115f33455caf5a7f34195844cfe
   return (
     <div>
       <h1>Rules Set</h1>
