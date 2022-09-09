@@ -1,44 +1,45 @@
+/* eslint-disable */
 import React, { useEffect, useState } from 'react'
 // import '../styles/users.css';
 
-import { getAllUsers } from "../utils/firebase";
-import { Table } from 'reactstrap';
+import { getAllUsers } from '../utils/firebase'
+import { Table } from 'reactstrap'
 
+export default function Users () {
+  const [users, setUsers] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
+  // eslint-disable-next-line func-call-spacing, no-empty-pattern
+  const [] = useState(null)
 
-export default function Users() {
-    const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+   useEffect(() => {
+      getAllUsers()
+        .then(users => {
+          setUsers(users)
+          setLoading(false)
+        }).catch(error => {
+          setError(error)
+          setLoading(false)
+        }
+      );
+    }
+    , []);
 
-    //   useEffect(() => {
-    //     getAllUsers()
-    //       .then(users => {
-    //         setUsers(users);
-    //         setLoading(false);
-    //       }).catch(error => {
-    //         setError(error);
-    //         setLoading(false);
-    //       }
-    //     );
-    //   }
-    //   , []);
+  // optimize this code
+  // eslint-disable-next-line no-unexpected-multiline
+  // (async function () {
+  //   // try {
+  //   const b = await getAllUsers()
+  //   setUsers(b)
+  //   console.log('apa ya')
+  //   console.log(b)
+  //   // } catch (error) {
+  //   //     console.log(error)
+  //   //     console.log("error")
+  //   // }
+  // })()
 
-    // optimize this code
-    (async function () {
-        // try {
-            const b = await getAllUsers()
-            setUsers(b)
-            console.log("apa ya")
-            console.log(b)
-        // } catch (error) {
-        //     console.log(error)
-        //     console.log("error")
-        // }
-
-    })()
-
-
-    return (
+  return (
         <div className="container">
             <div>
                 <h2>Nama Para Pemain</h2>
@@ -74,5 +75,5 @@ export default function Users() {
                 </Table>
             </div>
         </div>
-    )
+  )
 }
