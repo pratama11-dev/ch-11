@@ -241,6 +241,9 @@ function Dashboard () {
                     >
                       Play janken NOW! 
                     </a>
+                    Tarik Tambang 'comming soon' 
+                    <br></br>
+                    Panjat Pinang 'comming soon'
                     {/* {games.map((game, index) => (
                       <div className='row' key={index}>
                         <div className='col'>
