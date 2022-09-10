@@ -14,24 +14,13 @@ function Dashboard () {
 
   // const router = useRouter()
 
-  // useEffect(() => {
-  //   async function fetchData () {
-  //     const querySnapshot = await getDocs(collection(db, 'games'))
-  //     setGames(querySnapshot.docs.map((doc) => ({ ...doc.data() })))
-  //   }
-  //   fetchData()
-  // }, [games])
   useEffect(() => {
-    async function fetchData() {
-      const querySnapshot = await getDocs(collection(db, "games"));
-      setGames(querySnapshot.docs.map((doc) => ({ ...doc.data() })));
-      if (user) {
-        const data = await getUser(user.uid);
-        setUserData(data);
-      }
+    async function fetchData () {
+      const querySnapshot = await getDocs(collection(db, 'games'))
+      setGames(querySnapshot.docs.map((doc) => ({ ...doc.data() })))
     }
-    fetchData();
-  }, [games, user]);
+    fetchData()
+  }, [games])
 
   const fetchUserName = async () => {
     try {
@@ -259,7 +248,7 @@ function Dashboard () {
                       Add new game 
                     </a>
                     
-                    {games.map((game, index) => (
+                    {/* {games.map((game, index) => (
                       <div className='row' key={index}>
                         <div className='col'>
                           <div className='d-flex flex-row justify-content-between align-items-center'>
@@ -271,7 +260,7 @@ function Dashboard () {
                           <hr />
                         </div>
                       </div>
-                    ))}
+                    ))} */}
 
                     {/* <div className='skill-box'>
                       <span className='title'>Experience</span>
