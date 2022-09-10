@@ -14,13 +14,24 @@ function Dashboard () {
 
   // const router = useRouter()
 
+  // useEffect(() => {
+  //   async function fetchData () {
+  //     const querySnapshot = await getDocs(collection(db, 'games'))
+  //     setGames(querySnapshot.docs.map((doc) => ({ ...doc.data() })))
+  //   }
+  //   fetchData()
+  // }, [games])
   useEffect(() => {
-    async function fetchData () {
-      const querySnapshot = await getDocs(collection(db, 'games'))
-      setGames(querySnapshot.docs.map((doc) => ({ ...doc.data() })))
+    async function fetchData() {
+      const querySnapshot = await getDocs(collection(db, "games"));
+      setGames(querySnapshot.docs.map((doc) => ({ ...doc.data() })));
+      if (user) {
+        const data = await getUser(user.uid);
+        setUserData(data);
+      }
     }
-    fetchData()
-  }, [games])
+    fetchData();
+  }, [games, user]);
 
   const fetchUserName = async () => {
     try {
@@ -237,14 +248,18 @@ function Dashboard () {
                     <h5 className='m-0 font-weight-bold text-Dark'>Game List</h5>
                     <br></br>
                     <a
-                      href='/game'
+                      href='/play/rock-paper-scissors/'
                     >
                       Play janken NOW! 
                     </a>
-                    Tarik Tambang 'comming soon' 
                     <br></br>
-                    Panjat Pinang 'comming soon'
-                    {/* {games.map((game, index) => (
+                    <a
+                      href='/Addgame'
+                    >
+                      Add new game 
+                    </a>
+                    
+                    {games.map((game, index) => (
                       <div className='row' key={index}>
                         <div className='col'>
                           <div className='d-flex flex-row justify-content-between align-items-center'>
@@ -256,7 +271,7 @@ function Dashboard () {
                           <hr />
                         </div>
                       </div>
-                    ))} */}
+                    ))}
 
                     {/* <div className='skill-box'>
                       <span className='title'>Experience</span>
