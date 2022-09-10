@@ -241,14 +241,8 @@ function Dashboard () {
                     >
                       Play janken NOW! 
                     </a>
-                    <br></br>
-                    <a
-                      href='/Addgame'
-                    >
-                      Add new game 
-                    </a>
-                    
-                    {/* {games.map((game, index) => (
+                    <br></br>                    
+                    {games.map((game, index) => (
                       <div className='row' key={index}>
                         <div className='col'>
                           <div className='d-flex flex-row justify-content-between align-items-center'>
@@ -260,25 +254,13 @@ function Dashboard () {
                           <hr />
                         </div>
                       </div>
-                    ))} */}
-
-                    {/* <div className='skill-box'>
-                      <span className='title'>Experience</span>
-                      <div className='skill-bar'>
-                        <span className='skill-per exp'>
-                          <span className='tooltip'>60%</span>
-                        </span>
-                      </div>
-                    </div>
+                    ))}
                     <br></br>
-                    <div className='skill-box'>
-                      <span className='title'>Level</span>
-                      <div className='skill-bar'>
-                        <span className='skill-per lev'>
-                          <span className='tooltip'>80%</span>
-                        </span>
-                      </div>
-                    </div> */}
+                    <a
+                      href='/Addgame'
+                    >
+                      Add new game 
+                    </a>
                   </div>
                 </div>
               </div>

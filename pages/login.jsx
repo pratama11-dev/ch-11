@@ -140,39 +140,6 @@ function Login () {
         </div>
       </div>
     </section>
-    // <div classNameName='login'>
-    //   <div classNameName='login__container'>
-    //     <input
-    //       type='text'
-    //       classNameName='login__textBox'
-    //       value={email}
-    //       onChange={(e) => setEmail(e.target.value)}
-    //       placeholder='E-mail Address'
-    //     />
-    //     <input
-    //       type='password'
-    //       classNameName='login__textBox'
-    //       value={password}
-    //       onChange={(e) => setPassword(e.target.value)}
-    //       placeholder='Password'
-    //     />
-    //     <button
-    //       classNameName='login__btn'
-    //       onClick={() => login()}
-    //     >
-    //       Login
-    //     </button>
-    //     <button classNameName='login__btn login__google' onClick={signInWithGoogle}>
-    //       Login with Google
-    //     </button>
-    //     <div>
-    //       <Link to='/reset'>Forgot Password</Link>
-    //     </div>
-    //     <div>
-    //       Don't have an account? <Link to='/register'>Register</Link> now.
-    //     </div>
-    //   </div>
-    // </div>
   )
 }
 export default Login

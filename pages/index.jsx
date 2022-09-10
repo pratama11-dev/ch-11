@@ -140,9 +140,6 @@ export default function Home () {
           <div className='col align-self-end story-scroll-down'>
             <Link href='#gallery' className='header-scroll-link-wrapper+'>
               THE STORY
-              {/* <p className='header-scroll-toggle'>
-            </p>
-            <i className='bi bi-caret-down story-scroll-down-img'></i> */}
             </Link>
           </div>
         </div>

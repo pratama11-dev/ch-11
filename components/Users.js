@@ -25,20 +25,6 @@ export default function Users () {
     }
     , []);
 
-  // optimize this code
-  // eslint-disable-next-line no-unexpected-multiline
-  // (async function () {
-  //   // try {
-  //   const b = await getAllUsers()
-  //   setUsers(b)
-  //   console.log('apa ya')
-  //   console.log(b)
-  //   // } catch (error) {
-  //   //     console.log(error)
-  //   //     console.log("error")
-  //   // }
-  // })()
-
   return (
         <div className="container">
             <div>

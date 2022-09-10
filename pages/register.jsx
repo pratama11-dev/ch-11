@@ -14,10 +14,7 @@ function Register () {
     e.preventDefault()
     if (!name) alert('Please enter name')
     await registerWithEmailAndPassword(name, email, password)
-    // setSuccess(true)
-    // setTimeout(() => {
-    //   navigate('/login')
-    // }, 2000)
+
   }
 
   return (
