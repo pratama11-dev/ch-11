@@ -71,7 +71,7 @@ function Dashboard () {
                   />
                   <div className='mt-3'>
                     <h4>{name}</h4>
-                    <button className='btn btn-primary'>View Profile</button>
+                    {/* <button className='btn btn-primary'>View Profile</button> */}
                   </div>
                 </div>
               </div>
@@ -236,8 +236,12 @@ function Dashboard () {
                     {/* <h5 className='m-0 font-weight-bold text-Dark'>History</h5> */}
                     <h5 className='m-0 font-weight-bold text-Dark'>Game List</h5>
                     <br></br>
-
-                    {games.map((game, index) => (
+                    <a
+                      href='/game'
+                    >
+                      Play janken NOW! 
+                    </a>
+                    {/* {games.map((game, index) => (
                       <div className='row' key={index}>
                         <div className='col'>
                           <div className='d-flex flex-row justify-content-between align-items-center'>
@@ -249,7 +253,7 @@ function Dashboard () {
                           <hr />
                         </div>
                       </div>
-                    ))}
+                    ))} */}
 
                     {/* <div className='skill-box'>
                       <span className='title'>Experience</span>
