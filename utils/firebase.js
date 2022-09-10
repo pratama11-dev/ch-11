@@ -230,6 +230,7 @@ async function updateLeaderboardDb (user, result) {
 
 const logout = () => {
   signOut(auth)
+  window.location.href = "/";
 }
 
 export {
