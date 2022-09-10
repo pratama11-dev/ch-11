@@ -65,7 +65,7 @@ export default function Home () {
               </a>
               <a href='/rules' className='nav-item nav-link px-4' id='about-us'>
                 PDF viewer
-              </a>
+              </a>  
               <a href='/video' className='nav-item nav-link px-4' id='about-us'>
                 Video Tutorial
               </a>
