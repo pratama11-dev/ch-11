@@ -15,7 +15,6 @@ html {
 
 .header {
     width: 100%;
-    background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url('../public/img/bg-1.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -152,7 +151,7 @@ nav {
 .gallery {
     width: 100%;
     height: 100vh;
-    background-image: radial-gradient(circle at right, #000, transparent), radial-gradient(circle at left, #000, transparent), url('../public/img/bg-2.webp');
+    /* background-image: radial-gradient(circle at right, #000, transparent), radial-gradient(circle at left, #000, transparent), url('../public/img/bg-2.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -210,7 +209,7 @@ nav {
 .features {
     width: 100%;
     height: 100vh;
-    background-image: radial-gradient(circle at right, #000, transparent), radial-gradient(circle at center, rgba(255, 255, 255, 0), transparent), radial-gradient(circle at left, rgba(0, 0, 0, 0.527), transparent), radial-gradient(ellipse at bottom, rgb(8, 8, 8), transparent), url('../public/img/bg-3.webp');
+    /* background-image: radial-gradient(circle at right, #000, transparent), radial-gradient(circle at center, rgba(255, 255, 255, 0), transparent), radial-gradient(circle at left, rgba(0, 0, 0, 0.527), transparent), radial-gradient(ellipse at bottom, rgb(8, 8, 8), transparent), url('../public/img/bg-3.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -254,7 +253,7 @@ nav {
 .sysreq {
     width: 100%;
     height: 100vh;
-    background-image: radial-gradient(30% 75% at 65% 40%, rgba(0, 0, 52, 0) 0%, rgba(10, 10, 10, 0.50) 50%, #000 95%), url('../public/img/bg-4.webp');
+    /* background-image: radial-gradient(30% 75% at 65% 40%, rgba(0, 0, 52, 0) 0%, rgba(10, 10, 10, 0.50) 50%, #000 95%), url('../public/img/bg-4.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 12vh;
@@ -304,7 +303,7 @@ nav {
 .score {
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(78.66% 177.87% at 19.56% 37.57%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url('../public/img/bg-5.webp');
+    /* background-image: radial-gradient(78.66% 177.87% at 19.56% 37.57%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url('../public/img/bg-5.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5%;

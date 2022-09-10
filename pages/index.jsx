@@ -33,7 +33,10 @@ export default function Home () {
       <Script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js' />
       <Script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js' />
 
-      <header className='header'>
+      <header
+        className='header'
+        style={{ backgroundImage: 'radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url("img/bg-1.webp")' }}
+      >
         <nav className='navbar navbar-expand-lg navbar-dark nav-style bd-navbar '>
           <a className='navbar-brand ml-5 px-5'>
             Logo
@@ -59,6 +62,9 @@ export default function Home () {
               </a>
               <a href='#' className='nav-item nav-link px-4' id='about-us'>
                 ABOUT US
+              </a>
+              <a href='/rules' className='nav-item nav-link px-4' id='about-us'>
+                PDF viewer
               </a>
               {user
                 ? (
@@ -139,7 +145,11 @@ export default function Home () {
         </div>
       </header>
 
-      <section className='gallery' id='gallery'>
+      <section
+        className='gallery'
+        id='gallery'
+        style={{ backgroundImage: 'radial-gradient(circle at right, #000, transparent), radial-gradient(circle at left, #000, transparent), url("/img/bg-2.webp")' }}
+      >
         <div className='container'>
           <div className='row ml-5 gallery-content'>
             <div className='col-5  gl-left-side'>
@@ -246,7 +256,10 @@ export default function Home () {
         </div>
       </section>
 
-      <section className='features '>
+      <section
+        className='features'
+        style={{ backgroundImage: 'radial-gradient(circle at right, #000, transparent), radial-gradient(circle at center, rgba(255, 255, 255, 0), transparent), radial-gradient(circle at left, rgba(0, 0, 0, 0.527), transparent), radial-gradient(ellipse at bottom, rgb(8, 8, 8), transparent), url("/img/bg-3.webp")' }}
+      >
         <div className='container'>
           <div className='row justify-content-end features-contents'>
             <div className='col-4 features-info mb-2'>
@@ -289,7 +302,10 @@ export default function Home () {
         </div>
       </section>
 
-      <section className='sysreq'>
+      <section
+        className='sysreq'
+        style={{ backgroundImage: 'radial-gradient(30% 75% at 65% 40%, rgba(0, 0, 52, 0) 0%, rgba(10, 10, 10, 0.50) 50%, #000 95%), url("/img/bg-4.webp")' }}
+      >
         <div className='container'>
           <div className='req-info-top'>
             <h5>Can My Computer Run This Game?</h5>
@@ -347,7 +363,11 @@ export default function Home () {
         </div>
       </section>
 
-      <section className='score' id='score'>
+      <section
+        className='score'
+        id='score'
+        style={{ backgroundImage: 'radial-gradient(78.66% 177.87% at 19.56% 37.57%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url("img/bg-5.webp")' }}
+      >
         <div className='container'>
           <div className='d-flex flex-wrap'>
             <div className='col-lg-2 d-flex align-items-center score-left-side'>
