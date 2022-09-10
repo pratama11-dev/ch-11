@@ -127,7 +127,7 @@ export default function Home () {
               Experience new tradition game play
             </h3>
             <a
-              href='/game'
+              href='/login'
               className='btn btn-warning btn-lg header-info-button mr-5'
             >
               Play NOW ||

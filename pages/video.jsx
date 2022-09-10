@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import Hello from "./Hello";
 import { Player } from "video-react";
 import "video-react/dist/video-react.css";
